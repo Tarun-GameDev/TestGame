@@ -21,7 +21,7 @@ public class Sphere : MonoBehaviour
             //rb.isKinematic = true;
 
             //OtherSphere.GetComponent<Rigidbody>().isKinematic = false;
-            OtherSphere.GetComponent<Rigidbody>().AddForce(Vector3.up * _force, ForceMode.Impulse);
+            OtherSphere.GetComponent<Rigidbody>().AddForce(Vector3.up * Time.deltaTime * _force, ForceMode.Impulse);
         }
 
     }

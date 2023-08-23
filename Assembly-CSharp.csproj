@@ -64,8 +64,8 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\DicePlayer.cs" />
-    <Compile Include="Assets\Scripts\CardLevelManager.cs" />
     <Compile Include="Assets\Scripts\Sphere.cs" />
+    <Compile Include="Assets\Scripts\CardLevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
