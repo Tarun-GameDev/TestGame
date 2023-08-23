@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NPC : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class NPC : MonoBehaviour
     [SerializeField] Vector3 goalPos;
     [SerializeField] float dist; //distance from player
     public float posLimit;  //pos limit so the npcs dont go out of the map
+    public TextMeshProUGUI playerIdText;
+    public int npcId;
 
     Player _player;
     void Start()
@@ -22,7 +25,9 @@ public class NPC : MonoBehaviour
     void Update()
     {
 
-        
+        //RandomlyMove();
+
+        /*
         if (_player != null)
         {
             dist = (_player.transform.position - transform.position).magnitude; //dist calculate from player to npc
@@ -32,13 +37,13 @@ public class NPC : MonoBehaviour
                 chasePlayer();
             }
             else
-                RandomlyMove();
+               
         }
         else
-            RandomlyMove();
+            RandomlyMove();*/
 
 
-        transform.position += transform.forward * moveSpeed * Time.deltaTime;
+        //transform.position += transform.forward * moveSpeed * Time.deltaTime;
     }
 
     //Chasing Player 

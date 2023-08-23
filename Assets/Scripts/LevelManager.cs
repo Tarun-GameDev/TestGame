@@ -13,6 +13,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] TMP_InputField playerSpeedIP;
     [SerializeField] GameObject startMenu;
 
+    public int currNpcTarID = 1;
+
 
     //All Prefabs 
     [Header("Prefabs")]
@@ -110,6 +112,8 @@ public class LevelManager : MonoBehaviour
                 _npc.attackRange = attackRange;
                 _npc.posLimit = groundSize / 2;
                 _npc.moveSpeed = npcSpeed;
+                _npc.playerIdText.text = (i+1).ToString();
+                _npc.npcId = (i + 1);
             }
 
         }
@@ -124,10 +128,11 @@ public class LevelManager : MonoBehaviour
         }
 
         //moving Goal Pos based on npcs
+        /*
         if (goalObj != null)
         {
             goalObj.transform.position = new Vector3(0f, 0f, (groundSize/2)-1f);
             goalObj.SetActive(true);
-        }
+        }*/
     }
 }

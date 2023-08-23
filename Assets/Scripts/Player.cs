@@ -101,10 +101,19 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.CompareTag("Enemy"))
+        Collider _npc = collision.collider;
+        
+        if(_npc.CompareTag("Enemy"))
         {
-            GameOver();
+            NPC _npcScript = _npc.GetComponent<NPC>();
+            if(_npcScript.npcId == LevelManager.instance.currNpcTarID)
+            {
+                Destroy(_npc.gameObject);
+                LevelManager.instance.currNpcTarID++;
+            }
         }
+
+      
         
         if(collision.collider.CompareTag("Goal"))
         {

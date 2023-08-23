@@ -56,11 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Card.cs" />
+    <Compile Include="Assets\Scripts\DiceController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\UIManager.cs" />
-    <Compile Include="Assets\NPC.cs" />
-    <Compile Include="Assets\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\NPC.cs" />
+    <Compile Include="Assets\Scripts\DicePlayer.cs" />
+    <Compile Include="Assets\Scripts\CardLevelManager.cs" />
+    <Compile Include="Assets\Scripts\Sphere.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
