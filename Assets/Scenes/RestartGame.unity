@@ -1700,7 +1700,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  isRewarded: 0
   gamePlayed: 0
 --- !u!4 &2031833145
 Transform:
